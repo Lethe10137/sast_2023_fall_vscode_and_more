@@ -1,9 +1,6 @@
 CXX = g++
 CXXFLAGS = -Wall -Wextra -g -fdiagnostics-color=always
 
-#手动指定多文件时的依赖，这里的main是main.cpp不带扩展名的结果
-main: main.cpp simple_random.cpp simple_random.h
-	$(CXX) $(CXXFLAGS) $^ -o $@
 
 # 定义对其他cpp文件编译规则
 %: %.cpp
