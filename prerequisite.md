@@ -12,7 +12,7 @@
 For reference:
 Windows： 
 VS Code的安装可以参考[Doc9](https://docs.net9.org/basic/vscode/)， [官网](https://code.visualstudio.com/).
-后面几项，[官网上的这个文档]（https://code.visualstudio.com/docs/cpp/config-mingw）是很好的逐步教程。
+后面几项，[官网上的这个文档](https://code.visualstudio.com/docs/cpp/config-mingw)是很好的逐步教程。
 
 
 Ubuntu:
