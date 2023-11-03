@@ -6,14 +6,15 @@
 			"preLaunchTask": "C/C++: g++ build active file controlled by makefile",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
             "args": ["arg1", "arg2"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [{"name" : "moonboos", "value": "80233"}],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": true,
+            "MIMode": "lldb",
+            // find your lldb-mi
+            "miDebuggerPath": "/Users/huyuxuan/.vscode/extensions/ms-vscode.cpptools-1.17.5-darwin-arm64/debugAdapters/lldb-mi/bin/lldb-mi"
         }
     ]
 }

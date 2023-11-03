@@ -4,7 +4,7 @@ CXXFLAGS = -Wall -Wextra -g -fdiagnostics-color=always
 
 # 定义对其他cpp文件编译规则
 %: %.cpp
-	$(CXX) $(CXXFLAGS) $< -o $@
+	$(CXX) $(CXXFLAGS) $< -o $@.out
 	
 
 #在 Makefile 中，$<、$@ 和 $^ 是自动化变量，用于表示规则中的特定部分。
