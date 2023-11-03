@@ -297,7 +297,7 @@ Step 2:
   检查 make g++ gdb 指令是否正常
 
 Step 3:
-  在.vscode文件夹下创建tasks.json和launch.json，譬如，可以参考示例
+  在.vscode文件夹下创建tasks.json和launch.json，譬如，可以参考示例(注意修改launch.json中的调试器路径)
 
 Step 4:
   vscode中进入打开的文件（多文件下，请和你在makefile文件或者在tasks.json中配置的保持一致），点击按钮以运行或调试！
@@ -683,7 +683,7 @@ Microsoft Visual C++的编译器的debug模式会在**未被初始化的栈内�
 
 Microsoft Visual C++的编译器的debug模式会在**未被初始化的堆内存**写入 `0xCD`。
 
-「烫」的GBK编码是`0xCC`, 「屯」的GBK编码是`0xCD`。 
+「烫」的GBK编码是`0xCCCC`, 「屯」的GBK编码是`0xCDCD`。 
 
 由于Microsoft Visual C++的编译器的debug模式会在**被销毁的堆内存**写入 `0xDD`，
 理论上会有「葺葺葺」(`0xDDDD`)的梗？
