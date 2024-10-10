@@ -1,6 +1,6 @@
 % 酒井科协基础技能培训 第二讲
-% 李骋昊
-% 崇祯七癸卯九月丙午朔廿二日丁卯
+% 李骋昊 
+% 崇祯七甲辰九月庚子朔初十日己酉
 
 ---
 CJKmainfont: Noto Sans Mono CJK TC
@@ -133,6 +133,20 @@ g++ = 预处理器 + 编译器 + 汇编器 + 链接器
 
 ----------------------------------------
 
+
+include path:
+
+查看 g++ 的 include 路径！ （g++ 去哪找 header）
+```bash
+echo | g++ -E -Wp,-v -
+```
+
+在`.vscode` 的 `c_cpp_properties.json`中设的include path
+告诉LSP你include的东西在哪——不代表编译的时候有什么！
+
+
+----------------------------------------
+
 ## 调试器
 
 以[GDB](https://www.sourceware.org/gdb/)为例:
@@ -161,9 +175,9 @@ GDB can do four main kinds of things (plus other things in support of these) to 
 常见：
 
 - Visual Studio Code
-- Vi Vim
+- Vi Vim Nvim
 - Nano
-- Notepad++
+- Notepad++ 
 - emacs
 
 
@@ -189,15 +203,16 @@ IDE (Integrated Development Environment)。
 
 
 - 功能强大的编辑器！
-- Vscode Remote
+- **Vscode Remote**
 - 丰富的插件生态
   - 多人协作：
-    - 对git等控制工具的支持
+    - 对git等控制工具的支持 (git graph、 git blame)
   - 语言相关：
     - 代码补全、分析、代码补全、语法检查
     - 调试
   
-  - Docker、Todo ...
+  - Docker、Todo 、format、...
+
 
 
 ----------------------------------------------
