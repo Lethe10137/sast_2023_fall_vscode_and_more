@@ -1,5 +1,7 @@
 使用：
 
+sudo apt install texlive-xetex
+
 pandoc -t beamer --latex-engine=xelatex --template=bt.tex slides.md -o slides.pdf
 
 编译slides
